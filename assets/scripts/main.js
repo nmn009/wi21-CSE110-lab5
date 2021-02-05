@@ -12,13 +12,13 @@ num.oninput = function () {
 }
 function changespeaker() {
   if (slider.value > 66) {
-    soundimage.src = "/assets/media/icons/volume-level-3.svg";
+    soundimage.src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/icons/volume-level-3.svg";
   } else if (slider.value < 67 && slider.value > 33){
-    soundimage.src = "/assets/media/icons/volume-level-2.svg";
+    soundimage.src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/icons/volume-level-2.svg";
   } else if (slider.value == 0){
-    soundimage.src = "/assets/media/icons/volume-level-0.svg";
+    soundimage.src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/icons/volume-level-0.svg";
   } else {
-    soundimage.src = "/assets/media/icons/volume-level-1.svg";
+    soundimage.src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/icons/volume-level-1.svg";
   }
 }
 // TODO
