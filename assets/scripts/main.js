@@ -18,6 +18,7 @@ num.oninput = function () {
   changespeaker();
 }
 function changespeaker() {
+	document.getElementById("horn-sound").volume = parseFloat(slider.value) / 100.0;
   if (slider.value > 66) {
     soundimage.src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/icons/volume-level-3.svg";
   } else if (slider.value < 67 && slider.value > 33){
@@ -35,14 +36,17 @@ function changespeaker() {
 }
 document.getElementById("radio-air-horn").addEventListener("click",changeair);
 function changeair(){
-	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/air-horn.svg";    
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/air-horn.svg";
+	document.getElementById("horn-sound").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/audio/air-horn.mp3";
 }
 document.getElementById("radio-car-horn").addEventListener("click",changeradio);
 function changeradio(){
-	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/car.svg";    
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/car.svg"; 
+	document.getElementById("horn-sound").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/audio/car-horn.mp3";
 }
 document.getElementById("radio-party-horn").addEventListener("click",changeparty);
 function changeparty(){
-	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/party-horn.svg";    
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/party-horn.svg";
+	document.getElementById("horn-sound").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/audio/party-horn.mp3";
 }
 // TODO
