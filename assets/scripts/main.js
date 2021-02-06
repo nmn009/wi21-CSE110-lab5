@@ -32,4 +32,16 @@ function changespeaker() {
     audiobtn.disabled = false;
   }
 }
+document.getElementById("radio-air-horn").addEventListener("click",changeair);
+function changeair(){
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/air-horn.svg";    
+}
+document.getElementById("radio-car-horn").addEventListener("click",changeradio);
+function changeradio(){
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/car.svg";    
+}
+document.getElementById("radio-party-horn").addEventListener("click",changeparty);
+function changeparty(){
+	document.getElementById("sound-image").src = "https://nmn009.github.io/wi21-CSE110-lab5/assets/media/images/party-horn.svg";    
+}
 // TODO
