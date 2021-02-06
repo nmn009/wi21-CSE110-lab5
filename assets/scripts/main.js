@@ -3,6 +3,11 @@ var slider = document.getElementById("volume-slider");
 var num = document.getElementById("volume-number");
 var soundimage = document.getElementById("volume-image");
 var audiobtn = document.getElementById("honk-btn");
+
+document.getElementById("honk-btn").addEventListener("click", function(event){
+  event.preventDefault()
+});
+
 slider.oninput = function() {
   num.value = this.value;
   changespeaker();
