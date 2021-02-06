@@ -5,7 +5,8 @@ var soundimage = document.getElementById("volume-image");
 var audiobtn = document.getElementById("honk-btn");
 
 document.getElementById("honk-btn").addEventListener("click", function(event){
-  event.preventDefault()
+  event.preventDefault();
+  document.getElementById("horn-sound").play();
 });
 
 slider.oninput = function() {
